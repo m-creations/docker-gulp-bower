@@ -31,10 +31,10 @@ You should add the alias statement to your `~/.bashrc`.
 Github repo
 -----------
 
-https://github.com/m-creations/gulp-bower
+https://github.com/m-creations/docker-gulp-bower
 
 Docker Hub
 ----------
 
-https://registry.hub.docker.com/u/mcreations/docker-gulp-bower/
+https://registry.hub.docker.com/u/mcreations/gulp-bower/
 
