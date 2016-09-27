@@ -3,6 +3,8 @@
 FROM mcreations/openwrt-x64
 MAINTAINER Kambiz Darabi <darabi@m-creations.net>
 
+ADD image/root /
+
 RUN opkg update &&\
     opkg install nodejs nodejs-npm git git-http &&\
     rm /tmp/opkg-lists/* &&\
@@ -14,4 +16,3 @@ RUN opkg update &&\
 ENV HOME /tmp
 
 WORKDIR /data
-

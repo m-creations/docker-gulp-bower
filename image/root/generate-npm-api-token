@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "$NPM_USERNAME" > /tmp/npm-login-input
+echo "$NPM_PASSWORD" >> /tmp/npm-login-input
+echo "$NPM_EMAIL" >> /tmp/npm-login-input
+
+if [[ -n $NPM_USERNAME && -n NPM_PASSWORD && -n $NPM_EMAIL && -n NPM_REGISTRY ]]; then
+npm login --registry "$NPM_REGISTRY" </tmp/npm-login-input
+else
+    echo "All mandatory variables(NPM_USERNAME, NPM_PASSWORD, NPM_EMAIL, NPM_REGISTRY) are not provided."
+fi
+

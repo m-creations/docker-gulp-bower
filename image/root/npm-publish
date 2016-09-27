@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/generate-npm-api-token
+
+/usr/bin/npm -verbos publish /data
